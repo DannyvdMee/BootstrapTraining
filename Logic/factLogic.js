@@ -1,0 +1,1 @@
+let fact = document.querySelector('#fact');

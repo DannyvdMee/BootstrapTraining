@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>About Test Hub</title>
+
+    <!-- Bootstrap -->
+    <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                    <span class="sr-only">
+                        Toggle navigation
+                    </span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href='FirstLandingPage.html' class="navbar-brand">
+                    <img alt="Test Hub Brand" src="../img/brandicon.png" width="25px" height="25px">
+                </a>
+                <a href="FirstLandingPage.html" class="navbar-brand">
+                    Test Hub
+                </a>
+            </div>
+            <div id="main-menu" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="FirstLandingPage.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="OurTeam.html">Our Team</a>
+                    </li>
+                    <li>
+                        <a href="Blog.phtml">Blog</a>
+                    </li>
+                    <li>
+                        <a href="Contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="About.html">About</a>
+                    </li>
+                    <li>
+                        <a href="SignUp.html">Sign up</a>
+                    </li>
+                    <li>
+                        <a href="WeightConverter.html">Weight Converter</a>
+                    </li>
+                    <li class="active">
+                        <a href="Calculator.html">Calculator</a>
+                    </li>
+                    <li>
+                        <a href="numberFact.html">Number Facts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container" style="background-color: gray; border: 0.5px solid black; border-radius: 15px;">
+    <div>
+        <h1 class="display-4 text-center">
+            Test Hub build-in Calculator
+        </h1>
+    </div>
+    <div>
+        <p>
+            Please use the following format:
+        </p>
+        <p>
+            X*X or X:X or X+X or X-X
+        </p>
+        <p>
+            Where the X stands for any random digit.
+        </p>
+        <p style="font-style: italic">
+            Please don't use any blank spaces!
+        </p>
+    </div>
+    <form>
+        <div class="form-group" style="margin-top: 15px;">
+            <input id="inputDigit" type="text" class="form-control form-control-lg" placeholder="Enter a random Digit">
+        </div>
+    </form>
+    <div style="margin-bottom: 15px;">
+        <button id="calculateButton">Calculate the sum</button>
+    </div>
+    <div id="calculatorOutput">
+
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../jQuery/jquery-3.3.1.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../Bootstrap/js/bootstrap.min.js"></script>
+<!-- Script for the Calculator Logic -->
+<script src="../Logic/calculatorLogic.js"></script>
+</body>
+</html>
